@@ -1,0 +1,105 @@
+#playerStatus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+    text-align: center;
+    margin: 20px 60px;
+}
+
+.text-container {
+    font-family: Georgia;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 1.6rem;
+    margin-left: 230px;
+    word-spacing: 2px; /* Increase the spacing between words */
+    line-height: 2; /* Increase the spacing between lines */
+}
+
+.designkor {
+    background-color: #16293d; /* Set button background color */
+    /* Set text color */
+    border: none;
+    padding: 12px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Set the font size */
+    border-radius: 3px; /* Add rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    font-family: Georgia;
+    /* Hover effect */
+    &:hover {
+        background-color: #010913; /* Change color on hover */
+    }
+}
+
+.fixed-image {
+    width: 400px;
+    height: 380px;
+    border-radius: 100%;
+    outline: 2px solid rgb(105, 169, 248);
+    outline-offset: 10px;
+    margin-right: 38px;
+    margin-top: 10px;
+    left: 100px;
+    box-shadow: 0 0 10px #100000, 0 0 20px #301b07, 0 0 30px #301024,
+        0 0 40px #6268b0, 0 0 50px rgb(79, 90, 245), 0 0 60px #5ca5f2,
+        0 0 70px #60a0e5;
+}
+
+.button-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.header__buttons button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header__buttons button:hover {
+    background-color: #0056b3;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.resumeButton,
+button {
+    background-color: transparent; /* Makes the button background transparent */
+    border: none;
+    padding: 10px;
+    border-radius: 50%; /* Change the border to be oval */
+    cursor: pointer;
+}
+
+button img {
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 599px) {
+    #playerStatus {
+        height: auto;
+        margin: 10px 15px;
+    }
+
+    .text-container {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .fixed-image {
+        width: 150px;
+        height: 140px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}

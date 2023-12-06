@@ -1,0 +1,150 @@
+.menu {
+    width: 25rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 60%;
+    transform: translateY(-60%);
+    left: 22vw;
+    font-family: Georgia;
+}
+
+.item {
+    font-family: Georgia;
+    height: 3.7rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.title {
+    font-family: Georgia;
+    font-size: 1rem;
+    padding-right: 2.5rem;
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+    color: white; /* Change heading color to white */
+}
+
+.item.active .title {
+    font-size: 1.5rem;
+}
+
+.sub-container {
+    font-family: Georgia;
+    width: 30rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 32%;
+    right: 20vw;
+    cursor: pointer;
+    word-spacing: 4px; /* Increase the spacing between words */
+    line-height: 2.2;
+}
+.active-subheading {
+    cursor: default;
+}
+
+.item.active:nth-child(1),
+.item.active:nth-child(2),
+.item.active:nth-child(3) {
+    background: linear-gradient(90deg, var(--transparent), var(--purple) 70%);
+    border-radius: var(--radius-right);
+}
+
+.sub-container-1.active-subheading h3,
+.sub-container-2.active-subheading h3,
+.sub-container-3.active-subheading h3 {
+    border-radius: var(--radius-left);
+    color: white; /* Change subheading color to white */
+}
+
+.sub-container-1.active-subheading h3,
+.sub-container-2.active-subheading h3,
+.sub-container-3.active-subheading h3 {
+    background: linear-gradient(90deg, var(--purple), var(--transparent) 100%);
+    font-weight: normal;
+    color: white; /* Change subheading color to white */
+}
+
+.item.active {
+    position: relative;
+    cursor: default;
+}
+
+.p-container {
+    display: none;
+}
+
+.active-subheading .p-container {
+    display: block;
+    font-size: 1rem;
+}
+
+.icon-title-container {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 0.5rem;
+    cursor: default;
+}
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.sub-container-1 h3,
+.sub-container-2 h3,
+.sub-container-3 h3 {
+    position: relative;
+    margin: 0.2rem 0;
+    padding: 0.5rem 0 0.5rem 1rem;
+    color: white; /* Change heading color to white */
+}
+
+@media (max-width: 700px) {
+    .sub-container {
+        right: 1rem;
+    }
+    .item.active .title {
+        font-size: 1rem;
+    }
+    .item {
+        height: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .sub-container {
+        width: 15rem;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .title {
+        font-size: 1rem;
+        padding-right: 2.5rem;
+        font-weight: normal;
+        letter-spacing: 0.1rem;
+        color: white; /* Change heading color to white */
+    }
+    .active-subheading .p-container {
+        font-size: 1rem;
+    }
+    .icon-title-container,
+    .icon {
+        display: none;
+    }
+    h1 {
+        font-size: 1rem;
+        color: white; /* Change heading color to white */
+    }
+    h2,
+    h3,
+    p {
+        font-size: 1rem;
+        color: white; /* Change heading color to white */
+    }
+}
