@@ -84,25 +84,6 @@ button img {
     height: 50px;
 }
 
-#playerStatus {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 50vh;
-    text-align: center;
-    margin: 20px 60px;
-}
-
-.text-container {
-    font-family: Georgia;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: left;
-    font-size: 1.6rem;
-    margin-left: 230px;
-}
-
 .designkor {
     background-color: #16293d; /* Set button background color */
     /* Set text color */
