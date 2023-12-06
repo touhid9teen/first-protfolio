@@ -14,7 +14,9 @@
     border-radius: 10px;
     text-align: left;
     font-size: 1.6rem;
-    margin-left: 230px;
+    max-width: 800px; /* Increase max-width */
+    width: 100%;
+    margin: 100px 0 0 0; /* Increase margin-top */
 }
 
 .designkor {
@@ -185,4 +187,3 @@ button img {
         margin-left: 10px;
     }
 }
-
